@@ -1,4 +1,4 @@
--module(einpl).
+-module(einstein_dfs_break).
 -compile(export_all).
 
 -define(ruleE, [r1, r2, r3, r5, r6, r7, r8, r9, r12, r13, r16]).

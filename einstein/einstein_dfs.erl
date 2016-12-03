@@ -1,4 +1,4 @@
--module(einstein_2).
+-module(einstein_dfs).
 -export([query/2, result/0]).
 
 -define(single_rules,

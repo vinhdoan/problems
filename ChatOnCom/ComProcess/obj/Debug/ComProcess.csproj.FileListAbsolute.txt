@@ -1,0 +1,15 @@
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\Product\ComProcess.dll
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\Product\ComProcess.pdb
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ChatOnCom\ComProcess\obj\Debug\ResolveAssemblyReference.cache
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ChatOnCom\ComProcess\obj\Debug\ComProcess.dll
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ChatOnCom\ComProcess\obj\Debug\ComProcess.pdb
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\COM CHAT G8\Product\ComProcess.dll
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\COM CHAT G8\Product\ComProcess.pdb
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\COM CHAT G8\ChatOnCom\ComProcess\obj\Debug\ResolveAssemblyReference.cache
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\COM CHAT G8\ChatOnCom\ComProcess\obj\Debug\ComProcess.dll
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\COM CHAT G8\ChatOnCom\ComProcess\obj\Debug\ComProcess.pdb
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\Product\ComProcess.dll
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\Product\ComProcess.pdb
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\ChatOnCom\ComProcess\obj\Debug\ResolveAssemblyReference.cache
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\ChatOnCom\ComProcess\obj\Debug\ComProcess.dll
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\ChatOnCom\ComProcess\obj\Debug\ComProcess.pdb

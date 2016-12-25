@@ -1,0 +1,63 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace ChatOnCom
+{
+    public partial class frmMain : Form
+    {
+        public frmMain()
+        {
+            InitializeComponent();
+        }
+
+        private void cấuHìnhKếtNốiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSetting frm = new frmSetting();
+            frm.ShowDialog();
+        }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void tácGiảToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            About frm = new About();
+            frm.ShowDialog();
+        }
+
+        private void txtMsgInput_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSend_Click(object sender, EventArgs e)
+        {
+            string htmlDoc;
+            htmlDoc = "<b>Hello World!</b><br>";
+            //panelMessage.Url=new Uri("http://echip.com.vn/echiproot/javascript/test.html");
+            panelMessage.Navigate("http://echip.com.vn/echiproot/javascript/test.html");
+            
+            
+        }
+
+        private void kếtNốiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Mở kết nối
+        }
+
+        private void đónngKếtNốiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //đóng kết nối
+        }
+
+
+    }
+}

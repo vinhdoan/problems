@@ -1,0 +1,9 @@
+F:\Online Storage\Dropbox\Source\CSharp\HoaDon\Hoa Don\hoadon\bin\Debug\hoadon.exe
+F:\Online Storage\Dropbox\Source\CSharp\HoaDon\Hoa Don\hoadon\bin\Debug\hoadon.pdb
+F:\Online Storage\Dropbox\Source\CSharp\HoaDon\Hoa Don\hoadon\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\Online Storage\Dropbox\Source\CSharp\HoaDon\Hoa Don\hoadon\obj\x86\Debug\hoadon.Form1.resources
+F:\Online Storage\Dropbox\Source\CSharp\HoaDon\Hoa Don\hoadon\obj\x86\Debug\hoadon.Properties.Resources.resources
+F:\Online Storage\Dropbox\Source\CSharp\HoaDon\Hoa Don\hoadon\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\Online Storage\Dropbox\Source\CSharp\HoaDon\Hoa Don\hoadon\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\Online Storage\Dropbox\Source\CSharp\HoaDon\Hoa Don\hoadon\obj\x86\Debug\hoadon.exe
+F:\Online Storage\Dropbox\Source\CSharp\HoaDon\Hoa Don\hoadon\obj\x86\Debug\hoadon.pdb

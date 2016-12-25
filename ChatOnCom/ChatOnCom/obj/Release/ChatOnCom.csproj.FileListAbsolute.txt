@@ -1,0 +1,31 @@
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\Product\ChatOnCom.exe.config
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\Product\ChatOnCom.exe
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\Product\ChatOnCom.pdb
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\ChatOnCom\ChatOnCom\obj\Release\ResolveAssemblyReference.cache
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\ChatOnCom\ChatOnCom\obj\Release\ChatOnCom.frmAbout.resources
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\ChatOnCom\ChatOnCom\obj\Release\ChatOnCom.frmMain.resources
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\ChatOnCom\ChatOnCom\obj\Release\ChatOnCom.frmSetting.resources
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\ChatOnCom\ChatOnCom\obj\Release\ChatOnCom.frmSmiles.resources
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\ChatOnCom\ChatOnCom\obj\Release\ChatOnCom.Properties.Resources.resources
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\ChatOnCom\ChatOnCom\obj\Release\HQ_CONTROLS.ucHeader.resources
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\ChatOnCom\ChatOnCom\obj\Release\ChatOnCom.csproj.GenerateResource.Cache
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\ChatOnCom\ChatOnCom\obj\Release\ChatOnCom.exe
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\ChatOnCom\ChatOnCom\obj\Release\ChatOnCom.pdb
+H:\BAO CAO THIET BI NGOAI VI\ComChatG8\Product\ChatOnCom.exe.config
+H:\BAO CAO THIET BI NGOAI VI\ComChatG8\ChatOnCom\ChatOnCom\obj\Release\ChatOnCom.exe
+H:\BAO CAO THIET BI NGOAI VI\ComChatG8\ChatOnCom\ChatOnCom\obj\Release\ChatOnCom.pdb
+F:\Online Storage\Dropbox\Source\CSharp\Product\ChatOnCom.exe.config
+F:\Online Storage\Dropbox\Source\CSharp\ChatOnCom\ChatOnCom\obj\Release\ChatOnCom.exe
+F:\Online Storage\Dropbox\Source\CSharp\ChatOnCom\ChatOnCom\obj\Release\ChatOnCom.pdb
+F:\Online Storage\Dropbox\Source\CSharp\Product\ChatOnCom.exe
+F:\Online Storage\Dropbox\Source\CSharp\Product\ChatOnCom.pdb
+F:\Online Storage\Dropbox\Source\CSharp\ChatOnCom\ChatOnCom\obj\Release\ResolveAssemblyReference.cache
+F:\Online Storage\Dropbox\Source\CSharp\ChatOnCom\ChatOnCom\obj\Release\ChatOnCom.frmAbout.resources
+F:\Online Storage\Dropbox\Source\CSharp\ChatOnCom\ChatOnCom\obj\Release\ChatOnCom.frmMain.resources
+F:\Online Storage\Dropbox\Source\CSharp\ChatOnCom\ChatOnCom\obj\Release\ChatOnCom.frmSetting.resources
+F:\Online Storage\Dropbox\Source\CSharp\ChatOnCom\ChatOnCom\obj\Release\ChatOnCom.frmSmiles.resources
+F:\Online Storage\Dropbox\Source\CSharp\ChatOnCom\ChatOnCom\obj\Release\ChatOnCom.Properties.Resources.resources
+F:\Online Storage\Dropbox\Source\CSharp\ChatOnCom\ChatOnCom\obj\Release\HQ_CONTROLS.ucHeader.resources
+F:\Online Storage\Dropbox\Source\CSharp\ChatOnCom\ChatOnCom\obj\Release\GenerateResource-ResGen.read.1.tlog
+F:\Online Storage\Dropbox\Source\CSharp\ChatOnCom\ChatOnCom\obj\Release\GenerateResource-ResGen.read.4.tlog
+F:\Online Storage\Dropbox\Source\CSharp\ChatOnCom\ChatOnCom\obj\Release\GenerateResource-ResGen.write.1.tlog

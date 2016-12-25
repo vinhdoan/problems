@@ -1,0 +1,9 @@
+D:\Storage\Workspace\VS2012\Sudoku\Sudoku\bin\Debug\Sudoku.exe.config
+D:\Storage\Workspace\VS2012\Sudoku\Sudoku\obj\Debug\Sudoku.csprojResolveAssemblyReference.cache
+D:\Storage\Workspace\VS2012\Sudoku\Sudoku\obj\Debug\Sudoku.Form1.resources
+D:\Storage\Workspace\VS2012\Sudoku\Sudoku\obj\Debug\Sudoku.Properties.Resources.resources
+D:\Storage\Workspace\VS2012\Sudoku\Sudoku\obj\Debug\Sudoku.csproj.GenerateResource.Cache
+D:\Storage\Workspace\VS2012\Sudoku\Sudoku\bin\Debug\Sudoku.exe
+D:\Storage\Workspace\VS2012\Sudoku\Sudoku\bin\Debug\Sudoku.pdb
+D:\Storage\Workspace\VS2012\Sudoku\Sudoku\obj\Debug\Sudoku.exe
+D:\Storage\Workspace\VS2012\Sudoku\Sudoku\obj\Debug\Sudoku.pdb

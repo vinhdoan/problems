@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemorizeGame", "MemorizeGame\MemorizeGame.csproj", "{5EA87DEF-012C-498D-8E61-FA60B6AF8907}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EA87DEF-012C-498D-8E61-FA60B6AF8907}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EA87DEF-012C-498D-8E61-FA60B6AF8907}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EA87DEF-012C-498D-8E61-FA60B6AF8907}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EA87DEF-012C-498D-8E61-FA60B6AF8907}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,10 @@
+C:\Users\Nhat-Tuan TRAN\Desktop\game\game\game\bin\Release\game.exe.manifest
+C:\Users\Nhat-Tuan TRAN\Desktop\game\game\game\bin\Release\game.application
+C:\Users\Nhat-Tuan TRAN\Desktop\game\game\game\bin\Release\game.exe
+C:\Users\Nhat-Tuan TRAN\Desktop\game\game\game\bin\Release\game.pdb
+C:\Users\Nhat-Tuan TRAN\Desktop\game\game\game\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Nhat-Tuan TRAN\Desktop\game\game\game\obj\Release\game.exe.manifest
+C:\Users\Nhat-Tuan TRAN\Desktop\game\game\game\obj\Release\game.application
+C:\Users\Nhat-Tuan TRAN\Desktop\game\game\game\obj\Release\game.exe
+C:\Users\Nhat-Tuan TRAN\Desktop\game\game\game\obj\Release\game.pdb
+D:\Niit\Q3\Project 1\Project 1 Q3 Case 4 - Nguyen Quang Vu\game shuffle\game\obj\Release\ResolveAssemblyReference.cache

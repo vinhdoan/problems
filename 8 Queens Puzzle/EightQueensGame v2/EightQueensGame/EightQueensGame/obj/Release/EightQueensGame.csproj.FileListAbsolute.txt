@@ -1,0 +1,12 @@
+D:\Storage\Help Vu\CS\EightQueensGame\EightQueensGame\EightQueensGame\bin\Release\EightQueensGame.exe.manifest
+D:\Storage\Help Vu\CS\EightQueensGame\EightQueensGame\EightQueensGame\bin\Release\EightQueensGame.application
+D:\Storage\Help Vu\CS\EightQueensGame\EightQueensGame\EightQueensGame\bin\Release\EightQueensGame.exe
+D:\Storage\Help Vu\CS\EightQueensGame\EightQueensGame\EightQueensGame\bin\Release\EightQueensGame.pdb
+D:\Storage\Help Vu\CS\EightQueensGame\EightQueensGame\EightQueensGame\obj\Release\ResolveAssemblyReference.cache
+D:\Storage\Help Vu\CS\EightQueensGame\EightQueensGame\EightQueensGame\obj\Release\EightQueensGame.Form1.resources
+D:\Storage\Help Vu\CS\EightQueensGame\EightQueensGame\EightQueensGame\obj\Release\EightQueensGame.Properties.Resources.resources
+D:\Storage\Help Vu\CS\EightQueensGame\EightQueensGame\EightQueensGame\obj\Release\EightQueensGame.csproj.GenerateResource.Cache
+D:\Storage\Help Vu\CS\EightQueensGame\EightQueensGame\EightQueensGame\obj\Release\EightQueensGame.exe.manifest
+D:\Storage\Help Vu\CS\EightQueensGame\EightQueensGame\EightQueensGame\obj\Release\EightQueensGame.application
+D:\Storage\Help Vu\CS\EightQueensGame\EightQueensGame\EightQueensGame\obj\Release\EightQueensGame.exe
+D:\Storage\Help Vu\CS\EightQueensGame\EightQueensGame\EightQueensGame\obj\Release\EightQueensGame.pdb

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="game">
+</Property><Property Name="Solution File" Value="F:\Online Storage\Dropbox\Source\CSharp\Shuffle game\game.sln">
+</Property><Property Name="User Options File" Value="F:\Online Storage\Dropbox\Source\CSharp\Shuffle game\game.suo">
+</Property><Property Name="Date" Value="Thursday, September 20, 2012">
+</Property><Property Name="Time" Value="21:27 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="game.sln" Description="File successfully backed up as F:\Online Storage\Dropbox\Source\CSharp\,,,CS2008\Shuffle game\Backup\game.sln">
+</Event><Event ErrorLevel="0" Project="" Source="game.suo" Description="File successfully backed up as F:\Online Storage\Dropbox\Source\CSharp\,,,CS2008\Shuffle game\Backup\game.suo">
+</Event><Event ErrorLevel="0" Project="game" Source="game\game.csproj" Description="Project file successfully backed up as F:\Online Storage\Dropbox\Source\CSharp\,,,CS2008\Shuffle game\Backup\game\game.csproj">
+</Event><Event ErrorLevel="0" Project="game" Source="game\game.csproj.user" Description="Project user file successfully backed up as F:\Online Storage\Dropbox\Source\CSharp\,,,CS2008\Shuffle game\Backup\game\game.csproj.user">
+</Event><Event ErrorLevel="0" Project="game" Source="game\Box.cs" Description="File successfully backed up as F:\Online Storage\Dropbox\Source\CSharp\,,,CS2008\Shuffle game\Backup\game\Box.cs">
+</Event><Event ErrorLevel="0" Project="game" Source="game\PlayGame.cs" Description="File successfully backed up as F:\Online Storage\Dropbox\Source\CSharp\,,,CS2008\Shuffle game\Backup\game\PlayGame.cs">
+</Event><Event ErrorLevel="0" Project="game" Source="game\Program.cs" Description="File successfully backed up as F:\Online Storage\Dropbox\Source\CSharp\,,,CS2008\Shuffle game\Backup\game\Program.cs">
+</Event><Event ErrorLevel="0" Project="game" Source="game\Properties\AssemblyInfo.cs" Description="File successfully backed up as F:\Online Storage\Dropbox\Source\CSharp\,,,CS2008\Shuffle game\Backup\game\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="game" Source="game\ConsoleApplication1_TemporaryKey.pfx" Description="File successfully backed up as F:\Online Storage\Dropbox\Source\CSharp\,,,CS2008\Shuffle game\Backup\game\ConsoleApplication1_TemporaryKey.pfx">
+</Event><Event ErrorLevel="0" Project="game" Source="game\game.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="game" Source="game\game.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="game.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="game.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="game" Source="game\game.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

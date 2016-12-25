@@ -1,0 +1,9 @@
+C:\Users\Nhat-Tuan TRAN\AppData\Local\Temporary Projects\ConsoleApplication1\bin\Release\ConsoleApplication1.exe
+C:\Users\Nhat-Tuan TRAN\AppData\Local\Temporary Projects\ConsoleApplication1\bin\Release\ConsoleApplication1.pdb
+C:\Users\Nhat-Tuan TRAN\AppData\Local\Temporary Projects\ConsoleApplication1\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Nhat-Tuan TRAN\AppData\Local\Temporary Projects\ConsoleApplication1\obj\Release\ConsoleApplication1.exe
+C:\Users\Nhat-Tuan TRAN\AppData\Local\Temporary Projects\ConsoleApplication1\obj\Release\ConsoleApplication1.pdb
+C:\Users\Nhat-Tuan TRAN\AppData\Local\Temporary Projects\ConsoleApplication1\bin\Release\ConsoleApplication1.exe.manifest
+C:\Users\Nhat-Tuan TRAN\AppData\Local\Temporary Projects\ConsoleApplication1\bin\Release\ConsoleApplication1.application
+C:\Users\Nhat-Tuan TRAN\AppData\Local\Temporary Projects\ConsoleApplication1\obj\Release\ConsoleApplication1.exe.manifest
+C:\Users\Nhat-Tuan TRAN\AppData\Local\Temporary Projects\ConsoleApplication1\obj\Release\ConsoleApplication1.application

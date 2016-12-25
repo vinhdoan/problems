@@ -1,0 +1,10 @@
+D:\Document\Teaching\Web 2 course\iTech\CDI14\Demo\Demo_ConnectDataBase\Demo_ConnectDataBase\obj\Debug\ResolveAssemblyReference.cache
+D:\Document\Teaching\Web 2 course\iTech\CDI14\Demo\Demo_ConnectDataBase\Demo_ConnectDataBase\bin\Demo_ConnectDataBase.dll
+D:\Document\Teaching\Web 2 course\iTech\CDI14\Demo\Demo_ConnectDataBase\Demo_ConnectDataBase\bin\Demo_ConnectDataBase.pdb
+D:\Document\Teaching\Web 2 course\iTech\CDI14\Demo\Demo_ConnectDataBase\Demo_ConnectDataBase\obj\Debug\Demo_ConnectDataBase.dll
+D:\Document\Teaching\Web 2 course\iTech\CDI14\Demo\Demo_ConnectDataBase\Demo_ConnectDataBase\obj\Debug\Demo_ConnectDataBase.pdb
+C:\Users\shade\Desktop\Demo_ConnectDataBase\Demo_ConnectDataBase\bin\Demo_ConnectDataBase.dll
+C:\Users\shade\Desktop\Demo_ConnectDataBase\Demo_ConnectDataBase\bin\Demo_ConnectDataBase.pdb
+C:\Users\shade\Desktop\Demo_ConnectDataBase\Demo_ConnectDataBase\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\shade\Desktop\Demo_ConnectDataBase\Demo_ConnectDataBase\obj\Debug\Demo_ConnectDataBase.dll
+C:\Users\shade\Desktop\Demo_ConnectDataBase\Demo_ConnectDataBase\obj\Debug\Demo_ConnectDataBase.pdb

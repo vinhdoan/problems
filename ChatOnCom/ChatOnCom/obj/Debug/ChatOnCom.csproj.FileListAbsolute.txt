@@ -1,0 +1,16 @@
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\Product\ChatOnCom.exe.config
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\Product\ChatOnCom.exe
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\Product\ChatOnCom.pdb
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\ChatOnCom\ChatOnCom\obj\Debug\ResolveAssemblyReference.cache
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\ChatOnCom\ChatOnCom\obj\Debug\ChatOnCom.frmMain.resources
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\ChatOnCom\ChatOnCom\obj\Debug\ChatOnCom.frmSetting.resources
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\ChatOnCom\ChatOnCom\obj\Debug\ChatOnCom.Properties.Resources.resources
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\ChatOnCom\ChatOnCom\obj\Debug\HQ_CONTROLS.ucHeader.resources
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\ChatOnCom\ChatOnCom\obj\Debug\ChatOnCom.csproj.GenerateResource.Cache
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\ChatOnCom\ChatOnCom\obj\Debug\ChatOnCom.exe
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\ChatOnCom\ChatOnCom\obj\Debug\ChatOnCom.pdb
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\ChatOnCom\ChatOnCom\obj\Debug\ChatOnCom.frmSmiles.resources
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\ChatOnCom\ChatOnCom\obj\Debug\ChatOnCom.frmAbout.resources
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\ChatOnCom\ChatOnCom\bin\Debug\ChatOnCom.exe.config
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\ChatOnCom\ChatOnCom\bin\Debug\ChatOnCom.exe
+D:\HOC TAP\CAC KY HOC\KY 8\Thiet bi ngoai vi\ComChatG8\ChatOnCom\ChatOnCom\bin\Debug\ChatOnCom.pdb

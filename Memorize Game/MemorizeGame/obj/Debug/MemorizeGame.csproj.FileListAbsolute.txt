@@ -1,0 +1,37 @@
+D:\Niit\Q3\Project 2\MemorizeGame\MemorizeGame\obj\Debug\ResolveAssemblyReference.cache
+D:\Niit\Q3\Project 2\MemorizeGame\MemorizeGame\obj\Debug\MemorizeGame.Form1.resources
+D:\Niit\Q3\Project 2\MemorizeGame\MemorizeGame\obj\Debug\MemorizeGame.Properties.Resources.resources
+D:\Niit\Q3\Project 2\MemorizeGame\MemorizeGame\obj\Debug\MemorizeGame.csproj.GenerateResource.Cache
+D:\Niit\Q3\Project 2\MemorizeGame\MemorizeGame\bin\Debug\MemorizeGame.exe
+D:\Niit\Q3\Project 2\MemorizeGame\MemorizeGame\bin\Debug\MemorizeGame.pdb
+D:\Niit\Q3\Project 2\MemorizeGame\MemorizeGame\obj\Debug\MemorizeGame.exe
+D:\Niit\Q3\Project 2\MemorizeGame\MemorizeGame\obj\Debug\MemorizeGame.pdb
+C:\Users\Nhat-Tuan TRAN\Desktop\MemorizeGame\MemorizeGame\obj\Debug\MemorizeGame.exe
+C:\Users\Nhat-Tuan TRAN\Desktop\MemorizeGame\MemorizeGame\obj\Debug\MemorizeGame.pdb
+C:\Users\Nhat-Tuan TRAN\Desktop\MemorizeGame\MemorizeGame\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Nhat-Tuan TRAN\Desktop\MemorizeGame\MemorizeGame\obj\Debug\MemorizeGame.Form1.resources
+C:\Users\Nhat-Tuan TRAN\Desktop\MemorizeGame\MemorizeGame\obj\Debug\MemorizeGame.Properties.Resources.resources
+C:\Users\Nhat-Tuan TRAN\Desktop\MemorizeGame\MemorizeGame\obj\Debug\MemorizeGame.csproj.GenerateResource.Cache
+C:\Users\Nhat-Tuan TRAN\Desktop\MemorizeGame\MemorizeGame\bin\Debug\MemorizeGame.exe
+C:\Users\Nhat-Tuan TRAN\Desktop\MemorizeGame\MemorizeGame\bin\Debug\MemorizeGame.pdb
+D:\Niit\Q3\Project 2\anh\MemorizeGame\MemorizeGame\obj\Debug\MemorizeGame.exe
+D:\Niit\Q3\Project 2\anh\MemorizeGame\MemorizeGame\obj\Debug\MemorizeGame.pdb
+D:\Niit\Q3\Project 2\anh\MemorizeGame\MemorizeGame\bin\Debug\MemorizeGame.exe
+D:\Niit\Q3\Project 2\anh\MemorizeGame\MemorizeGame\bin\Debug\MemorizeGame.pdb
+D:\Niit\Q3\Project 2\anh\MemorizeGame\MemorizeGame\obj\Debug\ResolveAssemblyReference.cache
+D:\Niit\Q3\Project 2\anh\MemorizeGame\MemorizeGame\obj\Debug\MemorizeGame.Form1.resources
+D:\Niit\Q3\Project 2\anh\MemorizeGame\MemorizeGame\obj\Debug\MemorizeGame.Properties.Resources.resources
+D:\Niit\Q3\Project 2\anh\MemorizeGame\MemorizeGame\obj\Debug\MemorizeGame.csproj.GenerateResource.Cache
+D:\Storage\Help Vu\MemorizeGame\MemorizeGame\obj\Debug\MemorizeGame.exe
+D:\Storage\Help Vu\MemorizeGame\MemorizeGame\obj\Debug\MemorizeGame.pdb
+D:\Storage\Help Vu\CS\MemorizeGame\MemorizeGame\obj\Debug\MemorizeGame.exe
+D:\Storage\Help Vu\CS\MemorizeGame\MemorizeGame\obj\Debug\MemorizeGame.pdb
+F:\Online Storage\Dropbox\Source\CSharp\Memorize Game\MemorizeGame\obj\Debug\MemorizeGame.exe
+F:\Online Storage\Dropbox\Source\CSharp\Memorize Game\MemorizeGame\obj\Debug\MemorizeGame.pdb
+F:\Online Storage\Dropbox\Source\CSharp\Memorize Game\MemorizeGame\bin\Debug\MemorizeGame.exe
+F:\Online Storage\Dropbox\Source\CSharp\Memorize Game\MemorizeGame\bin\Debug\MemorizeGame.pdb
+F:\Online Storage\Dropbox\Source\CSharp\Memorize Game\MemorizeGame\obj\Debug\ResolveAssemblyReference.cache
+F:\Online Storage\Dropbox\Source\CSharp\Memorize Game\MemorizeGame\obj\Debug\MemorizeGame.Form1.resources
+F:\Online Storage\Dropbox\Source\CSharp\Memorize Game\MemorizeGame\obj\Debug\MemorizeGame.Properties.Resources.resources
+F:\Online Storage\Dropbox\Source\CSharp\Memorize Game\MemorizeGame\obj\Debug\GenerateResource-ResGen.read.1.tlog
+F:\Online Storage\Dropbox\Source\CSharp\Memorize Game\MemorizeGame\obj\Debug\GenerateResource-ResGen.write.1.tlog

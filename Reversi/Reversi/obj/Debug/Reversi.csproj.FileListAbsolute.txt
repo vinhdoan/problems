@@ -1,0 +1,9 @@
+D:\Storage\Workspace\VS2012\Reversi\Reversi\bin\Debug\Reversi.exe.config
+D:\Storage\Workspace\VS2012\Reversi\Reversi\obj\Debug\Reversi.csprojResolveAssemblyReference.cache
+D:\Storage\Workspace\VS2012\Reversi\Reversi\obj\Debug\Reversi.Form1.resources
+D:\Storage\Workspace\VS2012\Reversi\Reversi\obj\Debug\Reversi.Properties.Resources.resources
+D:\Storage\Workspace\VS2012\Reversi\Reversi\obj\Debug\Reversi.csproj.GenerateResource.Cache
+D:\Storage\Workspace\VS2012\Reversi\Reversi\bin\Debug\Reversi.exe
+D:\Storage\Workspace\VS2012\Reversi\Reversi\bin\Debug\Reversi.pdb
+D:\Storage\Workspace\VS2012\Reversi\Reversi\obj\Debug\Reversi.exe
+D:\Storage\Workspace\VS2012\Reversi\Reversi\obj\Debug\Reversi.pdb

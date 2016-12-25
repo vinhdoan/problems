@@ -30,24 +30,22 @@ generate(State) -> generate([{State, ?all_rules}], []).
 %% Generate successive states from current state and the first rule of
 %% ruleset. Each successor takes the tail of ruleset as its ruleset.
 generate([{State, [Rule | RuleSet]} | Stack], Acc) ->
-    Successors = apply_rule(State, Rule),
-    if Successors == [] ->
-	    generate(Stack, Acc);
-       true ->
-	    generate(zip(Successors, RuleSet) ++ Stack, Acc)
+    case apply_rule(State, Rule) of
+        [] ->
+            generate(Stack, Acc);
+        Successors ->
+            generate(zip(Successors, RuleSet) ++ Stack, Acc)
     end;
-generate([{State, []} | Stack], Acc) ->
-    generate(Stack, [State | Acc]);
+generate([{State, []} | Stack], Acc) -> generate(Stack, [State | Acc]);
 generate([], Acc) -> Acc.
 
 %% Apply the rule to get successive states:...
 apply_rule(State, Rule) ->
-    {Info, Type} = rule(Rule),
-    case Type of
-	is ->
-	    apply_rule_IS(State, Info, {State, 1}, []);
-	RuleOfSide ->
-	    apply_rule_SIDE(State, Info, {State, 1, RuleOfSide}, [])
+    case rule(Rule) of
+	{Info, is} ->
+            apply_rule_IS(State, Info, {State, 1}, []);
+	{Info, RuleOfSide} ->
+            apply_rule_SIDE(State, Info, {State, 1, RuleOfSide}, [])
     end.
 
 %% ...rule of type IS,...
@@ -120,16 +118,14 @@ match_pair_of_houses({HouseL, HouseR},
 	    {}
     end.
 
-init(N) ->
-    #{color => na,
-      drink => na,
-      nation => na,
-      pet => na,
-      position => N,
-      tobacco => na}.
+init(N) -> #{color => na,
+             drink => na,
+             nation => na,
+             pet => na,
+             position => N,
+             tobacco => na}.
 
-zip(List, Elem) ->
-    lists:zip(List, lists:duplicate(length(List), Elem)).
+zip(List, Elem) -> lists:zip(List, lists:duplicate(length(List), Elem)).
 
 %% Rule definition
 rule(r1) -> {[{nation, england}, {color, red}], is};

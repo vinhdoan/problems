@@ -1,0 +1,47 @@
+TRUY HỒI:
+time(i,t1,t2) = max(time(i-1,t1-di,t2), time(i-1,t1,t2-di)) + di
+
+ĐỆ QUY:
+function time(i,t1,t2)
+begin
+    if (t1<0 or t2<0) then return -1;
+    if i==0 then return 0;
+    time1 = time(i-1, t1 - d[i], t2);
+    time2 = time(i-1, t1, t2 - d[i]);
+    if (time1 == time2 == -1) then return -1;
+    time = max(time1, time2) + d[i]
+end
+Do mỗi lần gọi đệ quy lại gọi 2 lần đệ quy khác nên độ phức tạp là 2^i.
+
+QUY HOẠCH ĐỘNG:
+for j1:=0 to t1-1 do
+    for j2:=0 to t2-1 do
+        time[j1,j2]:=0
+for i:=1 to n do                /*với từng bài hát*/
+begin
+    for j1:=0 to t1 do
+        for j2:=0 to t2 do
+            begin
+                Time = time[j1,j2];
+                Last = last[j1,j2];
+                if j1-d[i] >= 0 then    /*d[0] là bài thứ nhất*/
+                    Last1 = last[j1-d[i],j2]
+                    if Last1 != i then
+                        Time1 = time[j1-d[i],j2] + d[i];
+                        if Time < Time1 and Time1 <= t1 then
+                            time[j1,j2] = Time1
+                    else
+                        time[j1,j2] = time[j1-d[i],j2]
+                    last[j1,j2] = i
+                if j2-d[i] >= 0 then
+                    Last2 = last[j1,j2-d[i]]
+                    if Last2 != i then
+                        Time2 = time[j1,j2-d[i]] + d[i];
+                        if Time < Time2 and Time2 <= t2 then
+                            time[j1,j2] = Time2
+                    else
+                        time[j1,j2] = time[j1,j2-d[i]]
+                    last[j1,j2] = i
+            end
+end
+Căn cứ theo số vòng lặp for => độ phức tạp n*t1*t2

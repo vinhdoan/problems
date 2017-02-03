@@ -1,0 +1,10 @@
+<html><body>
+
+<p>
+<erl>
+out(Arg) ->
+	 {html, "Hello, World!"}.
+</erl>
+</p>
+
+</body><html>

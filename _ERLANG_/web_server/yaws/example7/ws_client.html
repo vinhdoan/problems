@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script>
+		$(function ()
+		{
+			var WebSocket = window.WebSocket || window.MozWebSocket;
+			var socket = new WebSocket("ws://172.19.7.13:8905/websocket");
+			// wait for socket to open
+			socket.onopen = function ()
+			{
+				$('input#echo').on('keypress', function (event)
+				{
+					if ( event.which == 13 ) {
+						event.preventDefault();
+						var msg = $(this).val();
+						socket.send(JSON.stringify(
+						{
+							message:msg
+						}));
+					}
+				});
+				socket.onmessage = function (msg)
+				{
+					var message = $.parseJSON(msg.data);
+					var html = $('div#messages').html() + message.message + "<br>\n";
+					$('div#messages').html(html);
+				}
+			}
+		});
+	</script>
+</head>
+<body>
+WELCOME TO CLIENT-SERVER CHAT<br>
+Client: <input type="text" id="echo"><br>
+Server: <div id="messages"></div><br>
+</body>
+</html>

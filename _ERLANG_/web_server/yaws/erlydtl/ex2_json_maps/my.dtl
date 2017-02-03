@@ -1,0 +1,13 @@
+{
+"id": {{ product.id }},
+"productCode": "{{ product.product_code }}",
+"brand": "{{ product.brand }}",
+"description": "{{ product.description }}",
+"category": "{{ product.category.name }}",
+"subCategory": "{{ product.category.category.name }}",
+"frets": {{ product.frets|default:22 }},
+{% if product.body %}
+    "body": "mahogany",
+{% endif %}
+"pickup": "2x EMG 707TW"
+}

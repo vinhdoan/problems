@@ -1,0 +1,16 @@
+{% load guitar %}
+{% get_price id=product.id as price %}
+{
+"id": {{ product.id }},
+"productCode": "{{ product.product_code }}",
+"brand": "{{ product.brand }}",
+"description": "{{ product.description }}",
+"price": "{{ price.value|default:"n/a" }}",
+"category": "{{ product.category.name }}",
+"subCategory": "{{ product.category.category.name }}",
+"frets": {{ product.frets|frets:product.brand }},
+{% if product.body %}
+    "body": "mahogany",
+{% endif %}
+"pickup": "2x EMG 707TW"
+}

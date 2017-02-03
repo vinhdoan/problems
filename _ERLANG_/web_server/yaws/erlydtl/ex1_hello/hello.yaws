@@ -1,0 +1,5 @@
+<erl>
+  out(Arg) ->
+    {ok,HTML} = hello:render([{planet, "Earth"}]),
+    {html, HTML}.
+</erl>

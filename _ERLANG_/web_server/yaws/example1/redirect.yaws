@@ -1,0 +1,5 @@
+<erl>
+out(Arg) ->
+	 URL = "http://www.erlang.org",
+	 {redirect, URL}.
+</erl>

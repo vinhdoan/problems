@@ -1,0 +1,1 @@
+f(),{ok, T, L}=exp_lexer:string(15+(22/2-5)*8+(9-2)),{ok,E}=exp_parser:parse(T),calc:calc(E).

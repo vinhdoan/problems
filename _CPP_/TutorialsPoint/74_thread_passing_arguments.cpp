@@ -4,7 +4,7 @@
 
 using namespace std;
 
-#define NUM_THREADS     5
+#define NUM_THREADS 5
 
 struct thread_data{
    int  thread_id;
@@ -16,8 +16,8 @@ void *PrintHello(void *threadarg) {
 
    my_data = (struct thread_data *) threadarg;
 
-   cout << "Thread ID : " << my_data->thread_id ;
-   cout << " Message : " << my_data->message << endl;
+   cout << "Thread ID : " << my_data->thread_id << endl;
+   cout << "Message : " << my_data->message << endl;
 
    pthread_exit(NULL);
 }
@@ -40,6 +40,7 @@ int main () {
          exit(-1);
       }
    }
-	
+
+   cin.get();
    pthread_exit(NULL);
 }

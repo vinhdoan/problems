@@ -1,0 +1,12 @@
+1. Ở thành phố T có một cặp sinh đôi khá đặc biệt. Tên hai cô là Nhất và Nhị. Cô Nhất không có khả năng nói đúng vào thứ hai, thứ ba và thứ tư, còn những ngày khác nói đúng. Cô Nhị nói sai vào những ngày thứ ba, thứ năm và thứ bảy, còn những ngày khác nói đúng.
+Một lần tôi gặp hai cô và hỏi một trong hai người:
+- Cô hãy cho biết, trong hai người cô là ai?
+- Tôi là Nhất
+- Cô hãy nói thêm hôm nay là thứ mấy
+- Hôm qua là chủ nhật
+Cô kia bỗng xen vào:
+- Ngày mai là thứ sáu
+Tôi sững sờ ngạc nhiên - sao lại thế được và quay sang hỏi cô đó:
+- Cô cam đoan là cô nói thật chứ?
+- Ngày thứ tư tôi luôn nói thật - cô đó trả lời.
+Hai cô làm tôi lung túng thật sự, nhưng sau một hồi suy nghĩ tôi xác định được cô nào là cô Nhất, cô nào là cô Nhị và thậm chí còn xác định được hôm đó là ngày thứ mấy. Mời bạn hãy làm thử xem.

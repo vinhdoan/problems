@@ -13,4 +13,12 @@ print (tinydict)          # Prints complete dictionary
 print (tinydict.keys())   # Prints all the keys
 print (tinydict.values()) # Prints all the values
 
+dict['one'] = "This is updated one"
+                          # Update existing entry
+print (dict['one'])       # Prints updated one
+
+del dict['one']           # Remove entry with key 'one'
+dict.clear()              # Remove all entries in dict
+del dict                  # Delete entire dictionary
+
 input()

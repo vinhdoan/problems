@@ -10,4 +10,6 @@ print (tuple[2:])       # Prints elements starting from 3rd element
 print (tinytuple * 2)   # Prints tuple two times
 print (tuple + tinytuple) # Prints concatenated tuple
 
+del tuple               # Delete tuple
+                        # (note: unable to modify tuple)
 input()

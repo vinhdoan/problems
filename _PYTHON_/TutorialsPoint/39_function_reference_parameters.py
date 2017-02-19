@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 
 # Function definition is here
-def changeme( mylist ):
+def changeme( myflist ):
    "This changes a passed list into this function"
-   print ("Values inside the function before change: ", mylist)
-   mylist[2]=50
-   print ("Values inside the function after change: ", mylist)
+   print ("Values inside the function before change: ", myflist)
+   myflist[2]=50
+   print ("Values inside the function after change: ", myflist)
    return
 
 # Now you can call changeme function

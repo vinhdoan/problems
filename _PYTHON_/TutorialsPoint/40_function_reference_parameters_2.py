@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
 # Function definition is here
-def changeme( mylist ):
+def changeme( myflist ):
    "This changes a passed list into this function"
-   mylist = [1,2,3,4] # This would assi new reference in mylist
-   print ("Values inside the function: ", mylist)
+   myflist = [1,2,3,4] # This would assign new reference in mylist
+   print ("Values inside the function: ", myflist)
    return
 
 # Now you can call changeme function

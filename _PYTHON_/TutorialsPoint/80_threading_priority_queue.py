@@ -19,14 +19,18 @@ class myThread (threading.Thread):
 
 def process_data(threadName, q):
    while not exitFlag:
+      print("%s acquires lock" % (threadName))
       queueLock.acquire()
       if not workQueue.empty():
          data = q.get()
+         print("%s release lock" % (threadName))
          queueLock.release()
          print ("%s processing %s" % (threadName, data))
+         time.sleep(0.01)
       else:
+         print ("%s sees that queue is empty -> release lock" % (threadName))
          queueLock.release()
-         time.sleep(1)
+         time.sleep(0.01)
 
 threadList = ["Thread-1", "Thread-2", "Thread-3"]
 nameList = ["One", "Two", "Three", "Four", "Five"]
@@ -43,9 +47,11 @@ for tName in threadList:
    threadID += 1
 
 # Fill the queue
+print ("Main thread acquires lock")
 queueLock.acquire()
 for word in nameList:
    workQueue.put(word)
+print ("Main thread release lock")
 queueLock.release()
 
 # Wait for queue to empty

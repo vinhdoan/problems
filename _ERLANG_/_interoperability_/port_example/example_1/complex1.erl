@@ -24,14 +24,19 @@ call_port(Msg) ->
 init(ExtPrg) ->
     register(complex, self()),
     process_flag(trap_exit, true),
+    %% Each message is preceded by 2 bytes indicating its length
     Port = open_port({spawn, ExtPrg}, [{packet, 2}]),
     loop(Port).
 
 loop(Port) ->
     receive
 	{call, Caller, Msg} ->
+	    %% Send Data to Port by command:
+	    %% Port ! {Pid, {command, Data}}
 	    Port ! {self(), {command, encode(Msg)}},
 	    receive
+		%% Data is received from Port in format:
+		%% {Port, {data, Data}}
 		{Port, {data, Data}} ->
 		    Caller ! {complex, decode(Data)}
 	    end,

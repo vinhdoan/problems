@@ -12,19 +12,23 @@ int write_exact(byte *buf, int len);
 int read_cmd(byte *buf)
 {
   int len;
+  // Read 2 first bytes to know length of data received
   if (read_exact(buf, 2) != 2)
     return(-1);
   len = (buf[0] << 8) | buf[1];
+  // Read data whose length is 'len'
   return read_exact(buf, len);
 }
 
 int write_cmd(byte *buf, int len)
 {
   byte li;
+  // Send (write) 2 first bytes to indicate message length
   li = (len >> 8) & 0xff;
   write_exact(&li, 1);
   li = len & 0xff;
   write_exact(&li, 1);
+  // Send data whose length is 'len'
   return write_exact(buf, len);
 }
 

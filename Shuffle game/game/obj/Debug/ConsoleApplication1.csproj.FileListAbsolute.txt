@@ -1,5 +1,0 @@
-C:\Users\Nhat-Tuan TRAN\AppData\Local\Temporary Projects\ConsoleApplication1\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\Nhat-Tuan TRAN\AppData\Local\Temporary Projects\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
-C:\Users\Nhat-Tuan TRAN\AppData\Local\Temporary Projects\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
-C:\Users\Nhat-Tuan TRAN\AppData\Local\Temporary Projects\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
-C:\Users\Nhat-Tuan TRAN\AppData\Local\Temporary Projects\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

@@ -1,9 +1,0 @@
-D:\Storage\Workspace\VS2012\Game2048\Game2048\bin\Debug\Game2048.exe.config
-D:\Storage\Workspace\VS2012\Game2048\Game2048\obj\Debug\Game2048.csprojResolveAssemblyReference.cache
-D:\Storage\Workspace\VS2012\Game2048\Game2048\obj\Debug\Game2048.Form1.resources
-D:\Storage\Workspace\VS2012\Game2048\Game2048\obj\Debug\Game2048.Properties.Resources.resources
-D:\Storage\Workspace\VS2012\Game2048\Game2048\obj\Debug\Game2048.csproj.GenerateResource.Cache
-D:\Storage\Workspace\VS2012\Game2048\Game2048\bin\Debug\Game2048.exe
-D:\Storage\Workspace\VS2012\Game2048\Game2048\bin\Debug\Game2048.pdb
-D:\Storage\Workspace\VS2012\Game2048\Game2048\obj\Debug\Game2048.exe
-D:\Storage\Workspace\VS2012\Game2048\Game2048\obj\Debug\Game2048.pdb

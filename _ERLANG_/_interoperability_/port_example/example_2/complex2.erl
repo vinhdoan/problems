@@ -1,4 +1,4 @@
--module(complex1).
+-module(complex2).
 -export([start/1, stop/0, init/1]).
 -export([foo/1, bar/1]).
 
@@ -24,9 +24,9 @@ call_port(Msg) ->
 init(ExtPrg) ->
     register(complex, self()),
     process_flag(trap_exit, true),
-    %% C program uses plain port
+    %% C program uses Erl_Interface => port must be set to use binaries
     %% Each message is preceded by 2 bytes indicating its length
-    Port = open_port({spawn, ExtPrg}, [{packet, 2}]),
+    Port = open_port({spawn, ExtPrg}, [{packet, 2}, binary]),
     loop(Port).
 
 loop(Port) ->
@@ -34,12 +34,12 @@ loop(Port) ->
 	{call, Caller, Msg} ->
 	    %% Send Data to Port by command:
 	    %% Port ! {Pid, {command, Data}}
-	    Port ! {self(), {command, encode(Msg)}},
+	    Port ! {self(), {command, term_to_binary(Msg)}},
 	    receive
 		%% Data is received from Port in format:
 		%% {Port, {data, Data}}
 		{Port, {data, Data}} ->
-		    Caller ! {complex, decode(Data)}
+		    Caller ! {complex, binary_to_term(Data)}
 	    end,
 	    loop(Port);
 	stop ->
@@ -51,8 +51,3 @@ loop(Port) ->
 	{'EXIT', Port, _Reason} ->
 	    exit(port_terminated)
     end.
-
-encode({foo, X}) -> [1, X];
-encode({bar, Y}) -> [2, Y].
-
-decode([Int]) -> Int.

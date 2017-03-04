@@ -3,26 +3,36 @@
 
 //------------------------------------------------------------
 // Step 1. Compile the C code: */
-//     unix> gcc -o extprg complex.c erl_comm.c port.c
+//     unix> gcc -o extprg.out \
+//               -I /usr/lib/erlang/lib/erl_interface-3.8.2/include/ \
+//               -L /usr/lib/erlang/lib/erl_interface-3.8.2/lib/ \
+//               complex.c erl_comm.c ei.c \
+//               -lerl_interface -lei -pthread
 //
 // Step 2. Start Erlang and compile the Erlang code:
-//     unix> erl */
+//     unix> erl
 //     Erlang (BEAM) emulator version 4.9.1.2
 //
 //     Eshell V4.9.1.2 (abort with ^G)
-//     1> c(complex1).
-//     {ok,complex1}
+//     1> c(complex2).
+//     {ok,complex2}
 //
 // Step 3. Run the example:
-//     2> complex1:start("extprg").
+//     2> complex2:start("./extprg.out").
 //     <0.34.0>
-//     3> complex1:foo(3).
+//     3> complex2:foo(3).
 //     4
-//     4> complex1:bar(5).
+//     4> complex2:bar(5).
 //     10
-//     5> complex1:stop().
+//     5> complex2:bar(352).
+//     704
+//     6> complex2:stop().
 //     stop
 //------------------------------------------------------------
+
+#include "erl_interface.h"
+#include "ei.h"
+#include <string.h>
 
 typedef unsigned char byte;
 extern int read_cmd(byte *buf);

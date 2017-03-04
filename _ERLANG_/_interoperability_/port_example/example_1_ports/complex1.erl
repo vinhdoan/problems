@@ -34,6 +34,7 @@ loop(Port) ->
 	{call, Caller, Msg} ->
 	    %% Send Data to Port by command:
 	    %% Port ! {Pid, {command, Data}}
+            %% Data is encoded into a sequence of bytes
 	    Port ! {self(), {command, encode(Msg)}},
 	    receive
 		%% Data is received from Port in format:

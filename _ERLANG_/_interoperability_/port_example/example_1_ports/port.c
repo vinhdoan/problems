@@ -2,11 +2,11 @@
 /* This module contains main program */
 
 //------------------------------------------------------------
-// Step 1. Compile the C code: */
-//     unix> gcc -o extprg complex.c erl_comm.c port.c
+// Step 1. Compile the C code:
+//     unix> gcc -o extprg.out complex.c erl_comm.c port.c
 //
 // Step 2. Start Erlang and compile the Erlang code:
-//     unix> erl */
+//     unix> erl
 //     Erlang (BEAM) emulator version 4.9.1.2
 //
 //     Eshell V4.9.1.2 (abort with ^G)
@@ -14,7 +14,7 @@
 //     {ok,complex1}
 //
 // Step 3. Run the example:
-//     2> complex1:start("extprg").
+//     2> complex1:start("./extprg.out").
 //     <0.34.0>
 //     3> complex1:foo(3).
 //     4

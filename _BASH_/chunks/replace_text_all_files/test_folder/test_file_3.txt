@@ -1,0 +1,5 @@
+replaceone
+This should be changed replaceone
+replacetwo should be changed
+This bar should be changed
+bar

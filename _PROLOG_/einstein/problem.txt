@@ -1,0 +1,24 @@
+Đề bài toán
+
+-  Có 5 ngôi nhà, mỗi ngôi nhà được sơn một màu khác nhau. 
+-  Chủ nhân của mỗi ngôi nhà lại mang quốc tịch khác nhau.
+-  5 chủ nhân của ngôi nhà - mỗi người chỉ thích một loại nước uống, hút một hãng thuốc lá và nuôi một con vật nuôi riêng.
+-  Không vị chủ nhân nào thích cùng một loại nước uống, hút cùng một hãng thuốc lá và có cùng một loại vật nuôi.
+ 
+Gợi ý:
+
+1. Người Anh sống trong ngôi nhà màu đỏ.
+2. Người Thụy Điển nuôi chó.
+3. Người Đan Mạch thích uống trà.
+4. Ngôi nhà màu xanh lá nằm bên trái ngôi nhà màu trắng.
+5. Chủ nhà ngôi nhà xanh lá thích uống cà phê.
+6. Người hút thuốc lá Pall Mall nuôi chim.
+7. Chủ nhà màu vàng hút thuốc lá Dunhill.
+8. Người sống trong ngôi nhà chính giữa phố thích uống sữa.
+9. Người Na Uy sống trong ngôi nhà đầu tiên.
+10. Người hút thuốc lá Blends sống cạnh người nuôi mèo.
+11. Người nuôi ngựa sống cạnh người hút thuốc lá Dunhill.
+12. Người hút thuốc Blue Master thích uống bia.
+13. Người Đức hút thuốc lá Prince.
+14. Người Na Uy sống cạnh ngôi nhà màu xanh dương.
+15. Người hút thuốc lá Blends có người hàng xóm thích uống nước.

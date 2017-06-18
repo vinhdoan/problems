@@ -1,0 +1,1 @@
+Given a time series, e.g. stock price, try to find an algorithm to find the subsequence that maximizes {last element - first element} of time O(n)

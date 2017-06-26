@@ -85,6 +85,10 @@ plt.show()
 # With sepal width of 4.7 and sepal length of 3.1
 print "*** Predict class for a new flower:"
 print clf.predict(scaler.transform([[4.7, 3.1]]))
+# Our prediction procedure combines the result of the three binary classifiers and
+# selects the class in which it is more confident.
+# In this case, we will select the boundary line whose distance to the instance is longer.
+# We can check that using the classifier decision_function method
 print "*** Check the decision function to be sure about above result:"
 print clf.decision_function(scaler.transform([[4.7, 3.1]]))
 

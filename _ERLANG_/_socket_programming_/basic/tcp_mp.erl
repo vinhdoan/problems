@@ -65,6 +65,8 @@ server2(N) ->
     {ok, ListenSocket} = gen_tcp:listen(?S2_PORT, []),
     server2_accept(N, ListenSocket).
 
+server2_accept(0, ListenSocket) ->
+    gen_tcp:close(ListenSocket);
 server2_accept(N, ListenSocket) ->
     {ok, AcceptSocket} = gen_tcp:accept(ListenSocket),
     AcceptProcFun =
@@ -91,7 +93,7 @@ client(0, _ServerPort) ->
 client(N, ServerPort) ->
     {ok, ConnectSocket} = gen_tcp:connect(?S_IP, ServerPort, []),
     io:format("Client open port ~p~n", [inet:port(ConnectSocket)]),
-    io:format("Client sends ~pth message to server port ~p~n",
+    io:format("Client sends message number ~p to server port ~p~n",
 	      [N, ServerPort]),
     gen_tcp:send(ConnectSocket, ?MSG),
     gen_tcp:close(ConnectSocket),

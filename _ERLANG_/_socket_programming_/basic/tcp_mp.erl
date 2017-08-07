@@ -15,7 +15,7 @@ test(N) ->
     Client1Fun = fun() -> ClientFun(?S1_PORT) end,
     spawn(Server1Fun),
     spawn(Client1Fun),
-    timer:sleep(3000),
+    timer:sleep(N*1000),
     % Test server 2
     info(2),
     Server2Fun = fun() -> server2(N) end,
@@ -32,27 +32,33 @@ test(N) ->
 
 server1(N) ->
     {ok, ListenSocket} = gen_tcp:listen(?S1_PORT, []),
-    server1_receive(N, ListenSocket).
+    server1_accept(N, ListenSocket).
 
-server1_receive(0, ListenSocket) ->
+server1_accept(0, ListenSocket) ->
     gen_tcp:close(ListenSocket);
-server1_receive(N, ListenSocket) ->
+server1_accept(N, ListenSocket) ->
     {ok, AcceptSocket} = gen_tcp:accept(ListenSocket),
+    ProcToBeKilled = self(),
     NewListenProcFun =
 	fun() ->
-		server1_receive(N-1, ListenSocket)
+		server1_accept(N-1, ListenSocket),
+                ProcToBeKilled ! kill
 	end,
     % New process takes control of ListenSocket by
     % calling gen_tcp:accept/1
     spawn(NewListenProcFun),
     % This process is changed to AcceptSocket handling the message
+    server1_receive(AcceptSocket).
+
+server1_receive(AcceptSocket) ->
     receive
 	X ->
 	    io:format("Port ~p of server process ~p got ~p~n",
 		      [inet:port(AcceptSocket), self(), X]),
-	    % Sleep to preserve the ListenSocket because
-	    % it will be freed when first process dies
-	    timer:sleep(3000)
+            receive
+                kill ->
+                    ok
+            end
     end.
 
 %---------------------------------------------------------------------
@@ -105,7 +111,8 @@ client(N, ServerPort) ->
 %---------------------------------------------------------------------
 
 info(N) ->
-    io:format("###---------------###~n"
+    io:format("~n"
+              "###---------------###~n"
 	      "### TEST SERVER ~p ###~n"
 	      "###---------------###~n",
 	      [N]).

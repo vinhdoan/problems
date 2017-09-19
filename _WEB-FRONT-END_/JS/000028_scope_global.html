@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>
+      In HTML, all global variables will become window variables.
+    </p>
+    <p id="demo1"></p>
+
+    <p>
+      If you assign a value to a variable that has not been declared,
+      it will automatically become a GLOBAL variable:
+    </p>
+    <p id="demo2"></p>
+
+    <script>
+      var carName1 = "Volvo";
+      // code here can use window.carName1
+      document.getElementById("demo1").innerHTML = "I can display " + window.carName1;
+
+      myFunction();
+      // code here can use carName as a global variable
+      document.getElementById("demo2").innerHTML = "I can display " + carName2;
+      function myFunction() {
+      carName2 = "Volvo";
+      }
+    </script>
+
+  </body>
+</html>

@@ -12,16 +12,16 @@
     <p id="demo2"></p>
 
     <script>
-      var person = {
-      firstName: "John",
-      lastName : "Doe",
-      id       : 5566,
-      fullName : function() {
-      return this.firstName + " " + this.lastName;
-      }
-      };
-      document.getElementById("demo1").innerHTML = person.fullName();
-      document.getElementById("demo2").innerHTML = person.fullName;
+     var person = {
+         firstName: "John",
+         lastName : "Doe",
+         id       : 5566,
+         fullName : function() {
+             return this.firstName + " " + this.lastName;
+         }
+     };
+     document.getElementById("demo1").innerHTML = person.fullName();
+     document.getElementById("demo2").innerHTML = person.fullName;
     </script>
   </body>
 </html>

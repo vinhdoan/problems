@@ -29,3 +29,22 @@ class Circle:
     def perimeter(self):
         print('Computing perimeter')
         return 2 * math.pi * self.radius
+
+
+if __name__ == '__main__':
+    c = Circle(4.0)
+    print("* GET INSTANCE VARIABLES:", vars(c))
+    # -> {'radius': 4.0}
+    print("* COMPUTE AREA:")
+    print(c.area)
+    # -> Computing area
+    #    50.26548245743669
+    print("* CHECK VARIABLES AFTER COMPUTING:", vars(c))
+    # -> {'area': 50.26548245743669, 'radius': 4.0}
+    print("* COMPUTE AREA AGAIN:", c.area)
+    # -> 50.26548245743669
+    print("* DELETE VARIABLE")
+    del c.area
+    print("* CHECK VARIABLES AFTER DELETING:", vars(c))
+    print("* COMPUTE AREA AGAIN:")
+    print(c.area)

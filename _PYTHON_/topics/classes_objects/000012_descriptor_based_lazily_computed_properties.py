@@ -7,6 +7,10 @@ class lazyproperty:
     def __init__(self, func):
         self.func = func
 
+    # This non-data descriptor method is only called at the end of
+    # first __getattribute__ to execute the function and set the
+    # instance variable with the same name so that subsequent call
+    # to __getattribute__ can get the value from that variable
     def __get__(self, instance, cls):
         if instance is None:
             return self
@@ -20,11 +24,13 @@ class Circle:
     def __init__(self, radius):
         self.radius = radius
 
+    # 'area' is turned into 'lazyproperty' descriptor object
     @lazyproperty
     def area(self):
         print('Computing area')
         return math.pi * self.radius ** 2
 
+    # 'perimeter' is turned into 'lazyproperty' descriptor object
     @lazyproperty
     def perimeter(self):
         print('Computing perimeter')

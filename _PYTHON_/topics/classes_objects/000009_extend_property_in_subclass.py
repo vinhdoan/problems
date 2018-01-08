@@ -34,9 +34,14 @@ class SubPerson(Person):
         print('Setting name to', value)
         super(SubPerson, SubPerson).name.__set__(self, value)
         # super().name.__set__(value)  # WRONG
+        # Explanation:
+        # - super(SubPerson, SubPerson).name accesses class variable 'name'
+        # - super().name <=> super(SubPerson, self).name accesses Person
+        #   property 'name' getter
 
     @name.deleter
     def name(self):
         print('Deleting name')
         super(SubPerson, SubPerson).name.__delete__(self)
         # super().name.__delete__()  # WRONG
+        # Explanation: same as setter above

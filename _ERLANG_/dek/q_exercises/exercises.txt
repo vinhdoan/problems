@@ -1,0 +1,390 @@
+-----------------------------------------------------------
+Erlang Programming Exercises
+-----------------------------------------------------------
+Basic
+Interaction between processes, Concurrency
+Master and Slaves, error handling
+Robustness in Erlang, and use of a graphics package
+Erlang using UNIX sockets
+The use of open_port/1
+Socket comunication between Erlang and C
+Implementing Talk with Distributed Erlang
+Generating a parser for Datalog
+
+================================================================================
+NOTE: Before doing exercises, make sure that you already read
+1. Programming Rules.html
+2. SBG Design Rules and Guidelines.pptx
+
+NOTE: Make sure that you already completed EUnit for all exercises before
+sending review request email.
+
+NOTE: Use below form for function header:
+%% -----------------------------------------------------------------------------
+%% function_name/function_arity
+%%
+%% Desc: description for the function
+%%
+%% -----------------------------------------------------------------------------
+-spec function_name(Args) -> Return when
+      Args :: type_of_args,
+      Return :: type_of_return.
+================================================================================
+
+--------------------------------------------------------------------------------
+PART 1 : BASIC
+--------------------------------------------------------------------------------
+01. collatz(Integer) -> List
+    Defined for positive integers n. Returns a list starting with N. Each
+    subsequent value is computed from the previous value according to this rule:
+    * The list ends with 1.
+    * Every even number is followed by N / 2
+    * Every odd number (except 1) is followed by (3 * N) + 1
+    Example: collatz(7) -> [7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8,
+                            4, 2, 1].
+
+02. longest_collatz(Lo, Hi) -> {TheLongestStep, ListOfLongestNumber}
+    The Collatz sequence eventually converges to 1.
+    Find which starting value, in the range Lo to Hi (including both end points)
+    takes the longest to converge. If two values take equally long to converge,
+    return either value.
+    Example: longest_collatz(1, 10000) -> {262,[6171]}.
+
+03. element_reverse(List) -> List
+    Reverse the elements but the positions of sub-lists are kept.
+    Example: element_reverse([1, 2, [3, 4, [5, 6, 7], 8], 9]) ->
+                             [9, 8, [7, 6, [5, 4, 3], 2], 1].
+
+04. remove_duplicate(List) -> List
+    Removes duplicate elements of List, the order of elements must be kept.
+    Example: remove_duplicate([1, 2, 3, 1, 4, 1, 2]) -> [1, 2, 3, 4].
+
+05. skeleton(List) -> List
+    Removes all the non-list elements of list List, but retains all the list
+    structure (the brackets).
+    Example: skeleton([1, [2, [3, 4]], 5, 6, [7], []]) -> [[[]], [], []].
+
+06. eliminate(Value, List) -> List
+    Returns the list List with all occurrences of the Value removed, at all
+    levels, retaining the list (bracket) structure.
+    Example: eliminate(b, [a, b, [b, c, d, [a, [b]]], e]) ->
+                      [a, [c, d, [a, []]], e].
+             eliminate([b], [a, b, [b, c, d, [a, [b]]], e]) ->
+                      [a, b, [b, c, d, [a]], e].
+    NOTE: the Value can be anything.
+
+07. quicksort(List) -> List
+    Return a quicksorted version of the given list.
+    Example: quicksort([5, 3, 7, 8, 4, 1, 6, 2]) -> [1, 2, 3, 4, 5, 6, 7, 8].
+
+08. sqrt(Integer) -> Float
+    Compute the square root of the positive number S, using Newton's method.
+    That is, choose some arbitrary number, say 2, as the initial approximation
+    R to the square root; then to get the next approximation, compute the
+    average of R and N/R. Continue until you have five significant digits to the
+    right of the decimal point. Do this by taking an infinite series of
+    approximations, and taking approximations until they differ by less than
+    0.00001. Xo = 2 and Xn+1 = 1/2 (Xn + S/Xn).
+    Example: sqrt(12) -> 3.4641016151377544.
+
+09. sqrt_plus(Integer) -> Float
+    Same as above, but perform round estimation to find the initial
+    approxamation Xo first.
+    Compare the the number of iterations between 2 exercises.
+    Example: sqrt(795286) -> 15 times.
+             sqrt_plus(795286) -> 6 times.
+
+10. zap_gremlins(Text) -> Text
+    Remove from the given text all invalid ASCII characters.
+    The Valid characters are decimal 10 (linefeed), 13 (carriage return) and
+    32 through 126, inclusive. Remember that Erlang has no "character" type;
+    a "string" is just a list of ASCII values.
+    Example: zap_gremlins([84,104,105,115,32,235,105,115,3,32,97,12,32,115,116,114,105,110,103,32,105,127,110,32,69,114,108,11,14,97,110,103,33]) -> ?
+
+11. rot_13(Text) -> Text
+    Apply the rot-13 transformation to text.
+    This is a simple encoding in which each letter is replaced by the letter 13
+    further along, end-around. Both uppercase and lowercase letters should be
+    rotated; other characters should be unaffected.
+    Example: rot_13("This is a string in Erlang!") ->
+                    "Guvf vf n fgevat va Reynat!".
+
+--------------------------------------------------------------------------------
+PART 2 : ADVANCE
+--------------------------------------------------------------------------------
+01. Tree contruction
+    Given a list (L) of values (V) which can be compared for equality.
+    Write a function that traverses the list from Left to Right. The output of
+    function is a tree (T) which each node is a 3-tuple {X, V, Y} where V is the
+    Value and X, Y are the Left, Right nodes.
+    Insertion of elements follow the following rules:
+    * Starting at the root node, element greater than the current node element
+      go LEFT, element less than or equal to the current node elements go RIGHT.
+      Leafs have Left and Right element of 'NULL'.
+    Example: tree([2]) -> {'NULL', 2, 'NULL'}
+             tree([2, 4, 1]) -> {{'NULL', 4, 'NULL'}, 2, {'NULL', 1, 'NULL'}}
+             tree([4, 1, 3, 2, 5]) -> {{'NULL', 5, 'NULL'},
+                                       4,
+                                       {{'NULL', 3, {'NULL', 2, 'NULL'}},
+                                        1,
+                                        'NULL'}}
+
+02. Neighboring interval merging
+    Give a list L of 2-tuple {V, V} representing intervals.
+    Write a function that traverses the list, Left to Right and merges
+    overlapping intervals that are neighbors.
+    Example: neighbor_merge([{1,5}, {3,7}, {10,14}]) -> [{1,7}, {10, 14}]
+             neighbor_merge([{1,5}, {3,7}, {10,14}, {1,9}, {13, 20}]) ->
+                            [{1,7}, {10,14}, {1,9}, {13, 20}]
+             neighbor_merge([{1, 5}, {3, 7}, {1, 14}]) -> [{1,14}]
+
+03. Calculate percentages
+    Give a list of integer.
+    Write a function that calculate the percentage (integer) of each value in
+    the list. NOTE: make sure that the sum of all percentages = 100%
+    Example: percent([10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110]) ->
+                     [1, 3, 4, 6, 8, 9, 11, 12, 14, 15, 17]
+
+--------------------------------------------------------------------------------
+PART 3 : PROCESSES
+--------------------------------------------------------------------------------
+01. start_ring(N, M) -> ok.
+    Write a function which starts N processes in a ring,
+    and sends a message M times around all the processes in the ring.
+    After the messages have been sent the processes should terminate gracefully.
+    Messages sent in a ring of processes.
+    Example: start_ring(2, 2).
+             -> create process 1: <0.210.0>
+             -> create process 2: <0.211.0>
+             : process 1 --> send message 3
+             : process 2 --> send message 3
+             [<0.210.0>,<0.211.0>]
+             : process 1 --> send message 2
+             : process 2 --> send message 2
+             : process 1 --> send message 1
+             : process 2 --> send message 1
+             * process 1 terminated!
+             * process 2 terminated!
+
+02. Write a process that receives strings representing mathematical expressions
+    and sends their value back to the sender.
+    Now write a process that reads strings from the console, sends it to the
+    process and prints the value on the console.
+    The strint "-q" shall exit the program.
+    Example: math() ->
+             *** start math application ***
+             math expression: 1 + 1 - 1
+             result: 1
+             math expression: 2 + 2 * 2 + 2 / 2
+             result: 7.0
+             math expression: -q
+             result: "server is terminated!"
+             *** stop math application ***
+
+03. Using gen_server behavior of erlang for this exercise.
+    Create module election_server.erl.
+    Write function start(N) that starts n processes in a ring topology and that
+    assigns to each process in that ring some random but unique integer ID.
+    Implement the following election algorithm:
+    * Let each process send its ID "clockwise" around the ring.
+    * A process that receives an ID larger than its own ID lost the election and
+      just passes received IDs around the ring.
+    * The process that receives its own ID wins the election
+    Example: election_server:start(5) ->
+             ID: [196,31,107,355,382]
+
+             election_server:info() ->
+             *** process: 196, next process: election_server_31
+             *** process: 31, next process: election_server_107
+             *** process: 107, next process: election_server_355
+             *** process: 355, next process: election_server_382
+             *** process: 382, next process: election_server_196
+
+             election_server:election() ->
+             *** process 382: win the election!
+
+             election_server:stop() ->
+             *** process election_server_196: terminated!
+             *** process election_server_31: terminated!
+             *** process election_server_107: terminated!
+             *** process election_server_355: terminated!
+             *** process election_server_382: terminated!
+
+04. Using gen_statem behavior of erlang for this exercise.
+    Write a function that starts n processes in a ring topology and that assigns
+    to each process in that ring some random but unique integer ID.
+    Implement the following peterson algorithm:
+    * A process is in two states: It is either participating in the election
+      (active mode) or forwarding messages (called the relay mode).
+      At the beginning, all processes have active mode.
+    * Each process send its ID "clockwise" arround the ring.
+    * Let say process i has iID, it must receive 2 meesages from i-1 (i-1ID) and
+      i-2 (i-2ID) process.
+    * If i-1ID is the highest PID, then process i changes its ID to i-1ID and
+      send i-1ID to next node.
+    * If not, process i switchs to relay mode and only forwarding message.
+    * The process that receives its own ID wins the election.
+    Example: election_statem:start(5) ->
+             ID: [411,430,90,210,358]
+
+             election_statem:info() ->
+             *** process id: 411, next node is: election_statem_430
+             *** process id: 430, next node is: election_statem_90
+             *** process id: 90, next node is: election_statem_210
+             *** process id: 210, next node is: election_statem_358
+             *** process id: 358, next node is: election_statem_411
+
+             election_statem:election() ->
+             *** process 90: update virtual_id: 430
+             *** process 210: change to relay mode
+             *** process 358: change to relay mode
+             *** process 411: change to relay mode
+             *** process 430: change to relay mode
+             *** processs 90 (430): win the election!
+
+             election_statem:stop() ->
+             *** process election_statem_411 terminated!
+             *** process election_statem_430 terminated!
+             *** process election_statem_90 terminated!
+             *** process election_statem_210 terminated!
+             *** process election_statem_358 terminated!
+
+Master and Slaves, error handling
+This problem illustrates a situation where we have a process (the master) which supervises other processes (the slaves). In a real example the slave could, for example, be controlling different hardware units. The master's job is to ensure that all the slave processes are alive. If a slave crashes (maybe because of a software fault), the master is to recreate the failed slave.
+A master supervises other processes
+Write a module ms with the following interface:
+    - start(N) - Start the master and tell it to start N slave proc- esses. Register the master as the registered process master.
+    - to_slave(Message, N) - Send a message to the master and tell it to relay the message to slave N. The slave should exit (and be restarted by the master) if the message is die.
+    - The master should detect the fact that a slave processe diea nd restart it and print a message that it has done so.
+    -  The slave should print all messages it recieves except the message die
+Hints:
+The master should trap exit messages and create links to all the slave processes.
+The master should keep a list of the process id's (pid's) of the slave processes and their associated numbers.
+Example:
+    > ms:start(4).
+    => true
+    > ms:to_slave(hello, 2).
+    => {hello,2}
+    Slave 2 got message hello
+    > ms:to_slave(die, 3).
+    => {die,3}
+    master restarting dead slave3
+Robustness in Erlang, and use of a graphics package
+A robust system makes it possible to survive partial failure, i.e if some parts of the system crashes, it should be possible to recover instead of having a total system crash. In this exercise we will build a tree-like hierachy of processes that can recover if any of the tree-branches should
+
+
+
+
+
+
+
+%%% 01. reverse(List) -> List
+%%%     Reverse all elements in List.
+%%%     Example: reverses([1, [a, b], 2, []]) -> [[], 2, [a, b,], 1].
+
+%%% 02. sum(List) -> Integer
+%%%     Sums the elements in the list List (an empty list is 0)
+%%%     Example: sum([1, 3, 5]) -> 9.
+
+%%% 02. sum(From, To) -> Integer
+%%%     The function shall return the sum of the interval between From and To.
+%%%     From must =< To. If From > To, the process should exit with reason bad_input
+%%%     Example: sum(1, 3) -> 6.
+%%%              sum(2, 2) -> 2.
+
+%%% 03. multwo(List) -> List
+%%%     Multiples every element of List by 2. Using list comprehension.
+%%%     Example: multwo([1, 2, 3]) -> [2, 4, 6].
+
+%%% 05. create(Integer) -> List
+%%%     Write a function that returns a list of the format [1,2,..,N-1,N].
+%%%     Example: create(3) -> [1, 2, 3].
+
+%%% 04. split(List) -> {EvenList, OddList}.
+%%%     Given a list of integer, write a function that returns a pair of two lists
+%%%     {EL,OL} where EL is the list of even numbers in L and OL is the list of odd
+%%%     numbers.
+%%%     The ordering of the numbers should be the same as in the original list.
+%%%     Example: split([1, 2, 3, 4, 5, 6, 7, 8, 9]) -> {[2,4,6,8], [1,3,5,7,9]}
+
+%%% 05. app(Fs, Xs) -> Ys
+%%%     Given Fs is a list of n functions,
+%%%           Xs is a list of n integers,
+%%%     Write a function that returns Ys which is the list with the ith element of
+%%%     Fs applied to the ith element of Xs.
+%%%     Example: app([fun (X) -> X+1 end, fun (X) -> X-1 end], [1,5]) -> [2,4]
+
+%%% 06. factorial(Integer) -> Integer
+%%%     fibonacci(Integer) -> Integer
+%%%     Implement the factorial and fibonacci functions (returning N! for the first
+%%%     and the Nth fibonacci number for the second, where N is the input) using
+%%%     recursion. Make two versions of each: one that uses if expressions, and one
+%%%     that uses multiple function clauses (named fibif and fib, and factif and
+%%%     fact, respectively).
+%%%     Example: factorial(10) -> 3628800
+%%%              fibonacci(10) -> 55
+
+%%% 10. filter(List, Integer) -> Integer
+%%%     Write a function that, given a list of integers and an integer, will return
+%%%     all integers smaller than or equal to that integer.
+%%%     Example: filter([1, 2, 3, 4, 5], 3) -> [1, 2, 3].
+
+%%% 13. flatten(List) -> List
+%%%     Returns as value the list List with all inner brackets removed.
+%%%     Example: flatten([1, [2, 3], [], [[]], a]) -> [1, 2, 3, a].
+
+%%% 15. deep_reverse(List) -> List
+%%%     Reverses the elements of List at all levels.
+%%%     Example: deep_reverse([a, [b, c, [d]], e]) -> [e, [[d], c, b], a].
+
+%%% 22. replace(FromChar, ToChar, String) -> String
+%%%     Write a function to replace FromChar in a String to ToChar.
+%%%     Example: replace($\n, $ , "Erlang\nIs\nCool!") -> "Erlang Is Cool!".
+
+%%% 23. trim_blank(String) -> String
+%%%     Write a function to trim blank spaces at head/tail of a string
+%%%     Example: trim_blank("   Welcome to Erlang !   ") -> "Welcome to Erlang !".
+
+%%% 24. f2c(F) -> C
+%%%     c2f(C) -> F
+%%%     The function shall convert between centigrade and Fahrenheit scales.
+%%%     (hint 5(F-32) = 9C)
+
+%%% 25. temp_convert(Temperature) -> Converted
+%%%     Write a function temp_convert(Temperature) which combines the
+%%%     functionality of f2c and c2f.
+%%%     Example: temp_convert({c, 100}) -> {f, 212}.
+%%%              temp_convert({f, 32}) -> {c, 0}.
+
+%%% 26. perimeter({Type, Value}) -> Perimeter.
+%%%     Write a function perimeter(Form) which computes the perimeter of different
+%%%     forms. Form can be one of:
+%%%     * {square,Side}
+%%%     * {circle,Radius}
+%%%     * {triangle,A,B,C}
+
+%%% 27. ls(List) -> String.
+%%%     Write a function to build "ls" linux command based on following options:
+%%%     * long: "-l"
+%%%     * all: "-a"
+%%%     * {sort, time}: "-t"
+%%%     * {sort, size}: "-S"
+%%%     Example: ls([long, all, {sort, time}, long]) -> "ls -l -a -t"
+
+%%% 29. min(List) -> Min
+%%%     max(List) -> Max
+%%%     min_max(List) -> {Min, Max}
+%%%     Write three functions as above to find the minimum | maximum | minimum and
+%%%     maximum number of List.
+%%%     Example: min([2, 6, 4, 1, 9, 4]) -> 1
+%%%              max([2, 6, 4, 1, 9, 4]) -> 9
+%%%              min_max([2, 6, 4, 1, 9, 4]) -> {1, 9}
+
+%%% 32. swedish_day() -> String
+%%%     Write the function time:swedish_date() which returns a string containing the
+%%%     date in swedish YYMMDD format:
+%%%     Example: swedish_date() -> "080901"
+
+%%% 10. pretty_day() -> String
+%%%     Build a pretty printer for the current date and time:
+%%%     Example: pretty_day() -> "12th october 2014"

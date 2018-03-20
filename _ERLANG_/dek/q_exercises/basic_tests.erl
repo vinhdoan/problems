@@ -1,0 +1,2 @@
+-module(probs_tests).
+-compile(export_all).
